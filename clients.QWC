@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<QBWCXML>
+    <AppName>QuickBooks Integrator (clients)</AppName>
+    <AppID></AppID>
+    <AppURL>http://localhost/quickbooks/clients.php</AppURL>
+    <AppDescription>Export Customers from QB to csv file</AppDescription>
+    <AppSupport>http://localhost/</AppSupport>
+    <UserName>admin</UserName>
+    <OwnerID>{90A44FB7-33D6-4815-AC85-AC86A7E7123B}</OwnerID>
+    <FileID>{57F3B9B6-86F6-4FCC-B1FF-967DE1813123}</FileID>
+    <QBType>QBFS</QBType>
+    <IsReadOnly>false</IsReadOnly>
+</QBWCXML>
