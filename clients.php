@@ -11,13 +11,14 @@
  *
  * @param string $mess
  */
-function _log($mess = ''){
-    $file_name = './log/'.date("Y_m_d").'/clients.log';
+function _log($mess = '')
+{
+    $file_name = './log/clients.log';
     if(!file_exists(dirname($file_name)))
         mkdir(dirname($file_name), 0777);
 
     $f = fopen($file_name, "ab");
-    fwrite($f, "===============================================================================================================\n");
+    fwrite($f, "==============================================\n");
     fwrite($f, "[" . date("m/d/Y H:i:s") . "] ".$mess."\n");
     fclose($f);
 }
@@ -29,7 +30,9 @@ function _log($mess = ''){
  */
 function requestId($id = '')
 {
-    $file_name = './log/'.date("Y_m_d").'/clients_id.log';
+    $file_name = './log/clients_id.log';
+    if(!file_exists(dirname($file_name)))
+        mkdir(dirname($file_name), 0777);
 
     // save id into file
     if(trim($id) !== ''){
